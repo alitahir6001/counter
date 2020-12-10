@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's go session</title>
+</head>
+<body>
+    <form action='/destroy' method='post'>
+        {% csrf_token %}
+        <h1> howdy pard </h1>
+        
+        <p>Counter in Session is: {{request.session.counter}}</p>
+
+
+        <button type="reset">Reset the Counter</button>
+
+    </form>
+    
+</body>
+</html>
+
+
+
